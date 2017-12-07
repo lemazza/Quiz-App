@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz of Catan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="This is a quiz about the board game Catan.">
+  <meta name="keywords" content="Catan, Settlers, Settlers of Catan, Klaus Teuber, Quiz, ">
+  <meta name="author" content="Louis Mazza">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
+  <link href="float-grid.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>QUIZ of CATAN</h1>
+  </header>
+  <main>
+    <div class="first-page page">
+      <p>The Settlers of Catan is one of the most popular designer board games since Monopoly. How much do you know about it?</p>
+     <button id="quiz-starter">Start the Quiz</button>
+    </div>
+
+    <div class="quiz-page hidden page">
+      <h3 class="question-number">Question <span class="js-question-number">if you read this something has gone wrong</span> of <span class="js-total-questions">9</span></h3>
+      <form id="question-form">
+        <fieldset class="question-options">
+          <legend class="question-text">Who designed Settlers of Catan?</legend>
+        </fieldset>
+        <input type="submit" value="Submit Answer">      
+      </form>
+      <p>Current Score: <span class="js-current-score">0/0</span></p>
+      <button class="next-question hidden">Next Question</button>
+    </div>
+
+    <div class="results-page hidden page">
+      <h2 class="score-text">Congratulations you are a Something of Catan!<h2>
+      <h3 class="final-score">Your Final Score: <span class="js-current-score">0/0</span></h3>
+      <ul class="quiz-results">
+      </ul>
+      <button class="quiz-restarter">Restart Quiz</button>
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="version2.js"></script>
+</body>
+</html>
