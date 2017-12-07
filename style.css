@@ -73,12 +73,15 @@ label, input[type="radio"] {
 
 .wrong-answer {
   background-color: #B71F2E;
+  color: white;
 }
 
 .feedback {
   color: white;
   padding-right: 5px;
   padding-left: 5px;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
 .quiz-results li {
